@@ -50,14 +50,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, ["= 0.13.0"])
-      s.add_runtime_dependency(%q<json>, ["= 1.8.1"])
+      s.add_runtime_dependency(%q<json>, ["> 1.8.1"])
     else
       s.add_dependency(%q<httparty>, ["= 0.13.0"])
-      s.add_dependency(%q<json>, ["= 1.8.1"])
+      s.add_dependency(%q<json>, ["> 1.8.1"])
     end
   else
     s.add_dependency(%q<httparty>, ["= 0.13.0"])
-    s.add_dependency(%q<json>, ["= 1.8.1"])
+    s.add_dependency(%q<json>, ["> 1.8.1"])
   end
 end
 
